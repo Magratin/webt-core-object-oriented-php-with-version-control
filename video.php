@@ -23,4 +23,12 @@ abstract class videoimplement implements videointerface {
     abstract public function implementiframe():string;
     
 }
+
+class youtubevideo extends videoimplement {
+    function implementiframe():string
+    {
+        return '<iframe width="420" height="315" src="' . $this->url . '" title="' . $this->name . '"></iframe>
+        <figcaption>' . $this->source . '</figcaption>';
+    }
+}
 ?>
