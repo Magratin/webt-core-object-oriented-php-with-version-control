@@ -19,6 +19,20 @@
         new youtubevideo("https://www.youtube.com/embed/tgbNymZ7vqY","Bohemian Rhapsody","Youtube")
     ];
 
+    $vimeovideos = [
+        new vimeovideo("https://player.vimeo.com/video/76979871","The New Vimeo Player (You Know, For Videos)","Vimeo"),
+        new vimeovideo("https://player.vimeo.com/video/76979871","The New Vimeo Player (You Know, For Videos)","Vimeo"),
+        new vimeovideo("https://player.vimeo.com/video/76979871","The New Vimeo Player (You Know, For Videos)","Vimeo"),
+        new vimeovideo("https://player.vimeo.com/video/76979871","The New Vimeo Player (You Know, For Videos)","Vimeo"),
+        new vimeovideo("https://player.vimeo.com/video/76979871","The New Vimeo Player (You Know, For Videos)","Vimeo")
+    ];
+
+    echo "<p>5 Vimeo Videos</p>";
+
+    foreach($vimeovideos as $vimeovideo) {
+        echo $vimeovideo->implementiframe();
+    }
+
     echo "<p>5 Youtube Videos</p>";
     foreach($youtubevideos as $youtubevideo) {
         echo $youtubevideo->implementiframe();

@@ -31,4 +31,14 @@ class youtubevideo extends videoimplement {
         <figcaption>' . $this->source . '</figcaption>';
     }
 }
+
+
+class vimeovideo extends videoimplement {
+    function implementiframe(): string
+    {
+        return '<iframe width="420" height="315" src="' . $this->url . '" title="' . $this->name . '"></iframe>
+        <figcaption>' . $this->source . '</figcaption>';
+    }
+
+    }
 ?>
